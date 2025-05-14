@@ -5,6 +5,8 @@ const MasterLayout = () => (
   <div className="flex flex-col min-h-screen bg-surface text-white">
     <main className="flex-1 p-4">
       <Outlet />
+      <MainLayout />
+      
     </main>
   </div>
 );

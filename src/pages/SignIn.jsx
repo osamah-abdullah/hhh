@@ -1,13 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    /* هنا تستدعي API تسجيل الدخول */
+    // Simple mock login - in a real app, you would call an API
+    if (username && password) {
+      // Store user info in localStorage for demo purposes
+      localStorage.setItem("currentUser", JSON.stringify({
+        username,
+        role: "admin"
+      }));
+      navigate("/dashboard");
+    } else {
+      alert("Please enter both username and password");
+    }
   };
 
   return (

@@ -4,9 +4,9 @@ const TopNav = () => {
         window.logout();
       }
     };
-  
+
     return (
-      <header className="top-nav" id="top-nav" style={{ display: "none" }}>
+      <header className="top-nav" id="top-nav">
         <span className="admin-name">Admin Ali</span>
         <button className="logout-btn" onClick={logout}>
           Logout
@@ -14,6 +14,5 @@ const TopNav = () => {
       </header>
     );
   };
-  
+
   export default TopNav;
-  

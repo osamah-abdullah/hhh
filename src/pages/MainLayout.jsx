@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import TopNav from "../MainLayout/components/TopNav";
 import Sidebar from "../MainLayout/components/SideBar";
 import MainContent from "../MainLayout/components/MainContent";
+import "../MainLayout/styles.css";
 
 const MainLayout = ({ children }) => {
   useEffect(() => {

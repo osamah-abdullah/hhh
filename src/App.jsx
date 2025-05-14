@@ -5,7 +5,6 @@ import AppRoutes from "./helpers/AppRoutes";
 import { AuthProvider } from "./auth/context/auth-provider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import MainLayout from "./layout/MainLayout";
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
       <BrowserRouter>
         <ToastContainer />
         <AppRoutes />
-        <MainLayout/>
       </BrowserRouter>
     </AuthProvider>
   );

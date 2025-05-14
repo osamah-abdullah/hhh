@@ -1,6 +1,6 @@
 const Sidebar = () => {
     return (
-      <aside className="sidebar" id="sidebar" style={{ display: "none" }}>
+      <aside className="sidebar" id="sidebar">
         <div className="sidebar-logo"></div>
         <nav className="menu">
           <ul>
@@ -21,6 +21,5 @@ const Sidebar = () => {
       </aside>
     );
   };
-  
+
   export default Sidebar;
-  
